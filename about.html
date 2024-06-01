@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About - Kartik Kumar</title>
+    <link rel="icon" href="Images/favicon.png" type="image/png">
+    <title>About me</title>
     <link rel="stylesheet" href="style.css">
     <style>
         .back {
@@ -32,12 +33,27 @@
             border-radius: 50px;
             background-color: #fff;
         }
+        img.favicon-img {
+            border-radius: 50%;
+            position: absolute;
+            width: 200px;
+            height: auto;
+            left: 50%;
+            transform: translate(-50%, -200px);
+        }
+        @media (max-width: 768px)  {
+            img.favicon-img {
+                width: 170px;
+                transform: translate(-50%, -170px);
+            }
+        }
     </style>
 </head>
 <body>
     <button class="back" id="backToHome" onclick="window.open('index.html', '_self')">to home</button>
     <main>
         <section class="about">
+            <img src="Images/favicon.png" class="favicon-img" alt="fav">
             <h2>Hi, I'm Kartik Kumar</h2>
            
 <p>I am a passionate artist hailing from Roorkee (Uttarakhand). Born with a paintbrush in hand and a vision in my mind, I embarked on my artistic journey at a young age.</p>
