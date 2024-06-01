@@ -5,8 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About - Kartik Kumar</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        .back {
+            opacity: 0;
+            animation: fadeInUp 1s ease forwards;
+            animation-delay: 0.5s;
+            background-image: url('Images/backBtn.png');
+            background-color: #fff;
+            width: 60px;
+            height: 60px;
+            overflow: hidden;
+            border-radius: 50px;
+            color: transparent;
+            background-position: left;
+            background-size: auto 100%;
+            background-repeat: no-repeat;
+            transition: all 0.3s;
+            text-align: right;
+            white-space: nowrap;
+            margin-left: 20px;
+        }
+        .back:hover {
+            width: 140px;
+            transition: width 0.5s, opacity 0.2s, all 0.5s;
+            color: black;
+            border-radius: 50px;
+            background-color: #fff;
+        }
+    </style>
 </head>
 <body>
+    <button class="back" id="backToHome" onclick="window.open('index.html', '_self')">to home</button>
     <main>
         <section class="about">
             <h2>About Kartik Kumar</h2>
